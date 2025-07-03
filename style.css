@@ -1,0 +1,127 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #f8cdda, #1d2b64);
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.form-section {
+  background: #ffffffcc;
+  padding: 50px;
+  border-radius: 20px;
+  width: 350px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+}
+
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  font-size: 16px;
+  transition: 0.3s;
+  background-color: #fff;
+  color: #333;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  border-color: #ff6f61;
+  outline: none;
+  box-shadow: 0 0 10px #ffb199;
+}
+
+form textarea {
+  resize: none;
+  height: 100px;
+}
+
+form button {
+  background-color: #0d4cab;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background-color: #0cc2d3;
+}
+
+#formMessage {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.todo-section {
+  background: #ffffffcc;
+  padding: 30px;
+  border-radius: 20px;
+  width: 350px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+  height: 300px;
+}
+
+.todo-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.todo-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+}
+
+.todo-input button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #6a82fb;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.todo-input button:hover {
+  background-color: #5a72e2;
+}
+
+#todoList {
+  list-style: none;
+  padding: 0;
+}
+
+#todoList li {
+  background: #f1f1f1;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+}
