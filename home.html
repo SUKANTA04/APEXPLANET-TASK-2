@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact & To-Do</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1> 📝 Intermediate HTML, CSS, and JavaScript</h1>
+  <div class="container">
+    <div class="form-section">
+      <h2>Contact form</h2>
+      <form id="contactForm">
+  <input type="text" id="name" placeholder="Your Name" required />
+  <input type="email" id="email" placeholder="Your Email" required />
+  <input type="tel" id="phone" placeholder="Phone Number" required />
+  <input type="text" id="address" placeholder="Address" required />
+
+  <textarea id="message" placeholder="Your Message" required></textarea>
+  <button type="submit">submit</button>
+  <p id="formMessage"></p>
+</form>
+
+    </div>
+
+    <div class="todo-section">
+      <h2>✅ To-Do List</h2>
+      <div class="todo-input">
+        <input type="text" id="taskInput" placeholder="Add a new task..." />
+        <button id="addTaskBtn">Add</button>
+      </div>
+      <ul id="todoList"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
